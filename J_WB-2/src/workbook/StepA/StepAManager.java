@@ -25,7 +25,26 @@ public class StepAManager {
 			case 2:
 				cTOf ctf = new cTOf();
 				ctf.print_F();
+			case 3:
+				rectangle_area r_a = new rectangle_area();
+				r_a.printArea();
+			case 4:
+				pyungToarea pta = new pyungToarea();
+				pta.printArea();
+			case 5:
+				daysToSeconds dts= new daysToSeconds();
+				dts.printSeconds();
+			case 6:
+				computeAverage ca = new computeAverage();
+				ca.printTotal();
+				ca.printAverage();
+			case 7:
+				computeBytes cb = new computeBytes();
+				cb.printMegabytes();
+				cb.printKilobytes();
+				cb.printBytes();
 			}
+			
 		}
 		
 	}
