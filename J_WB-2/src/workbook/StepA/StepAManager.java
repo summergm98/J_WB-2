@@ -22,6 +22,9 @@ public class StepAManager {
 			case 1: 				
 				YearToAge yta = new YearToAge();
 				yta.printAge();
+			case 2:
+				cTOf ctf = new cTOf();
+				ctf.print_F();
 			}
 		}
 		
