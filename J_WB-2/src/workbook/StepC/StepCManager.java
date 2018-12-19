@@ -12,11 +12,13 @@ public class StepCManager {
 			printf("2. 물의 온도 구간 판정\n");
 			printf("3. 직사각형 형태 판정\n");
 			printf("4. 아파트 평형 계산 및 종류 판정\n");
-			printf("5. 연중 날짜 계산");
-			printf("6. \n");
-			printf("7. \n");
-			printf("8. \n");
-			printf("9. \n");
+			printf("5. 연중 날짜 계산\n");
+			printf("6. 점수 계산\n");
+			printf("7. 파일 전송 시간 계산\n");
+			printf("8. 3개의 수 중 최댓값과 최솟값 구하기\n");
+			printf("9. 소득세 계산\n");
+			printf("10. 간단한 사칙연산 계산기\n");
+			printf("11. 윤년 판정하기\n");
 			printf("=>원하는 메뉴는?(0:exit) :");
 			menu = s.nextInt();
 			if(menu == 0) break;
@@ -36,9 +38,35 @@ public class StepCManager {
 			case 4:
 				C04 c04 = new C04();
 				c04.printfResult();
+				break;
 			case 5:
 				C05 c05 = new C05();
 				c05.printResult();
+				break;
+			case 6:
+				C06 c06 = new C06();
+				c06.printResult();
+				break;
+			case 7:
+				C07 c07 = new C07();
+				c07.printR();
+				break;
+			case 8:
+				C08 c08 = new C08();
+				c08.printR();
+				break;
+			case 9:
+				C09 c09 = new C09();
+				c09.printTax();
+				break;
+			case 10:
+				C10 c10 = new C10();
+				c10.printR();
+				break;
+			case 11:
+				C11 c11 = new C11();
+				c11.printR();
+				break;
 			}
 				
 		}
