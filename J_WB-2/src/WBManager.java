@@ -11,7 +11,7 @@ public class WBManager {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
-		System.out.print("¿øÇÏ´Â StepÀº?");
+		System.out.print("ì›í•˜ëŠ” Stepì„ ì…ë ¥í•˜ì„¸ìš”: ");
 		String step = s.next();
 		if(step.equalsIgnoreCase("A")) 
 			new StepAManager();
@@ -25,6 +25,6 @@ public class WBManager {
 			new StepEManager();
 		else if(step.equalsIgnoreCase("F"))
 			new StepFManager();
-		System.out.printf("Á¾·áµÇ¾ú½À´Ï´Ù.\n");
+		System.out.printf("ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.\n");
 	}
 }
