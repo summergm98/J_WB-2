@@ -19,7 +19,7 @@ public class StepIManager {
 			menu = s.nextInt();
 			if(menu == 0) break;
 			switch(menu) {
-			case 1:
+			case 1:								
 				I01 i01 = new I01();
 				break;
 			case 2:
