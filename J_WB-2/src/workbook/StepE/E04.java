@@ -10,7 +10,7 @@ public class E04 {
 	}
 	
 	public void printR() {
-		printGUGU(mode);
+		printDan(mode);
 	}
 	
 	void getMode() {
@@ -19,13 +19,13 @@ public class E04 {
 		this.mode = s.nextInt();
 	}
 	
-	void printGUGU(int mode) {
-		int count = 0;
+	void printDan(int mode) {
 		int i,j;
+		int count = 0;
 		
-		if(mode == 1) {	
-			for(i = 3; i < 10; i += 2) {
-				for(j = 1; j < 10; j++) {
+		for(i = mode; i < 10; i+= 2) {
+			for(j = 1; j < 10; j++) {
+				if(i != 1) {
 					System.out.print(i + " x " + j + " = " + i * j);
 					count++;
 					if(count == 3) {
@@ -37,24 +37,8 @@ public class E04 {
 						System.out.print("    ");
 					}
 				}
-				System.out.print("\n");
 			}
-		}else if(mode == 2) {
-			for(i = 2; i < 10; i += 2) {
-				for(j = 1; j < 10; j++) {
-					System.out.print(i + " x " + j + " = " + i * j);
-					count++;
-					if(count == 3) {
-						System.out.printf("\n");
-						count = 0;
-					}else if(i * j / 10 != 0 ){
-						System.out.print("   ");
-					}else {
-						System.out.print("    ");
-					}
-				}
-				System.out.print("\n");
-			}
+			System.out.print("\n");
 		}
 	}
 }
