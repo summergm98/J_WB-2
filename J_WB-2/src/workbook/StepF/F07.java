@@ -21,11 +21,11 @@ public class F07 {
 		getFloor();
 		getLine();
 		
-		for(i = 0; i < 5; i++)
+		for(i = 0; i < floor_total.length; i++)
 			System.out.println((i+1) + "층에 사는 거주자는 모두 " + floor_total[i] + "명 입니다");
 		System.out.println(" ");
 		
-		for(j = 0; j < 3; j++)
+		for(j = 0; j < line_total.length; j++)
 			System.out.println((j+1) + "호 라인에 사는 거주자는 모두 " + line_total[j] + "명 입니다");
 		System.out.println(" ");
 		
@@ -35,8 +35,8 @@ public class F07 {
 	void getData() {
 		Scanner s = new Scanner(System.in);
 			
-		for(i = 0; i < 5; i++) {
-			for(j = 0; j < 3; j++) {
+		for(i = 0; i < floor_total.length; i++) {
+			for(j = 0; j < line_total.length; j++) {
 				ho = (i + 1) * 100 + j + 1;
 				System.out.printf("%d호에 살고 있는 사람의 숫자를 입력하시오 : ", ho);
 				this.newnum = s.nextInt();
@@ -48,26 +48,26 @@ public class F07 {
 	void getTotal() {
 		total = 0;
 		
-		for(i = 0; i < 5; i++)
-			for(j = 0; j < 3; j++)
+		for(i = 0; i < floor_total.length; i++)
+			for(j = 0; j < line_total.length; j++)
 				total += number[i][j];
 	}
 	
 	void getFloor() {
-		for(i = 0; i < 5; i++)
+		for(i = 0; i < floor_total.length; i++)
 			floor_total[i] = 0;
 		
-		for(i = 0; i < 5; i++)
-			for(j = 0; j < 3; j++)
+		for(i = 0; i < floor_total.length; i++)
+			for(j = 0; j < line_total.length; j++)
 				floor_total[i] += number[i][j];
 	}
 	
 	void getLine() {
-		for(i = 0; i < 3; i++)
+		for(i = 0; i < line_total.length; i++)
 			line_total[i] = 0;
 		
-		for(i = 0; i < 3; i++)
-			for(j = 0; j < 5; j++)
+		for(i = 0; i < line_total.length; i++)
+			for(j = 0; j < floor_total.length; j++)
 				line_total[i] += number[j][i];
 	}
 

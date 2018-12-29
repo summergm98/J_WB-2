@@ -17,13 +17,13 @@ public class F05 {
 		for(i = 0; i < 10; i++)
 			getCount(i);
 		
-		System.out.println("\nÃÑ " + count +"¸íÀÇ »ç¶÷ÀÌ ºñ¸¸ÀÔ´Ï´Ù");
+		System.out.println("\nì´ " + count +"ëª…ì˜ ì‚¬ëŒì´ ë¹„ë§Œì…ë‹ˆë‹¤");
 	}
 	
 	void getData() {
 		Scanner s = new Scanner(System.in);
 		for(i = 0; i < 10; i++) {
-			System.out.printf("%d¹øÂ° »ç¶÷ÀÇ ½ÅÀå(cm)°ú Ã¼Áß(kg)À» ÀÔ·ÂÇÏ¼¼¿ä: " , i+1);
+			System.out.printf("%dë²ˆì§¸ ì‚¬ëŒì˜ ì‹ ì¥(cm)ê³¼ ì²´ì¤‘(kg)ì„ ì…ë ¥í•˜ì„¸ìš”: " , i+1);
 			this.height = s.nextInt();
 			this.weight = s.nextInt();
 			
@@ -41,7 +41,7 @@ public class F05 {
 	
 	void getCount(int n) {
 		if(bmilist[n][2] >= 25) {
-			System.out.printf("%d¹øÂ° »ç¶÷Àº ºñ¸¸ÀÔ´Ï´Ù\n", n+1);
+			System.out.printf("%dë²ˆì§¸ ì‚¬ëŒì€ ë¹„ë§Œì…ë‹ˆë‹¤\n", n+1);
 			count ++;
 		}
 	}

@@ -8,6 +8,7 @@ public class F03 {
 	private double[] average = new double[3];
 	private int kor, eng, mat;
 	private int i,j;
+	private String name[] = {"êµ­ì–´" , "ì˜ì–´", "ìˆ˜í•™"};
 	
 	public F03() {
 		getScore();
@@ -16,16 +17,15 @@ public class F03 {
 	}
 	
 	public void printR() {
-		System.out.print("±¹¾îÀÇ ÃÑÁ¡Àº " + sum[0] + " ÀÌ°í, Æò±ÕÀº " + average[0] +" ÀÔ´Ï´Ù \n");
-		System.out.print("¿µ¾îÀÇ ÃÑÁ¡Àº " + sum[1] + " ÀÌ°í, Æò±ÕÀº " + average[1] +" ÀÔ´Ï´Ù \n");
-		System.out.print("¼öÇĞÀÇ ÃÑÁ¡Àº " + sum[2] + " ÀÌ°í, Æò±ÕÀº " + average[2] +" ÀÔ´Ï´Ù \n");
+		for(int i = 0; i < 3; i++)
+			System.out.print(name[i] + "ì˜ ì´ì ì€ " + sum[i] + " ì´ê³ , í‰ê· ì€ " + average[i] +" ì…ë‹ˆë‹¤\n");
 	}
 	
 	void getScore() {
 		Scanner s = new Scanner(System.in);
 		
 		for(i = 0; i < 5; i++) {
-			System.out.printf("%d¹ø ÇĞ»ı ±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ", i + 1);
+			System.out.printf("%dë²ˆ í•™ìƒ êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ", i + 1);
 			this.kor = s.nextInt();
 			this.eng = s.nextInt();
 			this.mat = s.nextInt();
@@ -45,7 +45,6 @@ public class F03 {
 			for(i = 0; i < 5; i++) {
 				sum[j] += jumsu[i][j];
 			}
-			System.out.print(sum[j] + "\n");
 		}
 	}
 	

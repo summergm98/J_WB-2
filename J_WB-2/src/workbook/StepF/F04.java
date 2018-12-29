@@ -17,7 +17,7 @@ public class F04 {
 	
 	public void printR() {
 		for(i = 0; i < 5; i++) {
-			System.out.printf("%d¹ø ÇÐ»ýÀÇ ÃÑÁ¡Àº %d ÀÌ°í, Æò±ÕÀº %.1f ÀÔ´Ï´Ù\n", i + 1, sum[i], average[i]);
+			System.out.printf("%dë²ˆ í•™ìƒì˜ ì´ ì ì€ %d ì´ê³ , í‰ê· ì€ %.1f ìž…ë‹ˆë‹¤\n", i + 1, sum[i], average[i]);
 		}
 	}
 	
@@ -25,7 +25,7 @@ public class F04 {
 		Scanner s = new Scanner(System.in);
 		
 		for(i = 0; i < 5; i++) {
-			System.out.printf("%d¹ø ÇÐ»ý ±¹¾î, ¿µ¾î, ¼öÇÐ Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ", i + 1);
+			System.out.printf("%dë²ˆ í•™ìƒì˜ êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”: ", i + 1);
 			this.kor = s.nextInt();
 			this.eng = s.nextInt();
 			this.mat = s.nextInt();
