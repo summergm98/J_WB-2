@@ -11,7 +11,7 @@ public class StepLManager {
 			printf("1. 메뉴판 저장하기\n");
 			printf("2. 주차장 입출력 관리\n");
 			printf("3. 식당 주문 관리\n");
-			printf("4. \n");
+			printf("4. 학생 정보 관리\n");
 			printf("=>원하는 단계는?(0:exit) :");
 			menu = s.nextInt();
 			if(menu == 0) break;
