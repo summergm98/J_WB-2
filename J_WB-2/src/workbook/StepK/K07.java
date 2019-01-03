@@ -28,7 +28,24 @@ class Student{
 	}
 	
 	void print(int index) {
-		System.out.println((index + 1) + " / " + kor[index] + " / " + eng[index] + " / " + math[index] + " / " + (kor[index] + eng[index] + math[index]) + " / " + average[index]);
+		System.out.print((index + 1) + " / " + kor[index] + " / " + eng[index] + " / " + math[index] + " / " + (kor[index] + eng[index] + math[index]) + " / " + average[index]);
+		if(average[index] >= 95)
+			System.out.println(" / A+");
+		else if(average[index] < 95 && average[index] >= 90)
+			System.out.println(" / A");
+		else if(average[index] < 90 && average[index] >= 85)
+			System.out.println(" / B+");
+		else if(average[index] < 85 && average[index] >= 80)
+			System.out.println(" / B");
+		else if(average[index] < 80 && average[index] >= 75)
+			System.out.println(" / C+");
+		else if(average[index] < 75 && average[index] >= 70)
+			System.out.println(" / D+");
+		else if(average[index] < 70 && average[index] >= 65)
+			System.out.println("/ D");
+		else 
+			System.out.println(" / F");
+		
 	}
 }
 
@@ -39,7 +56,7 @@ public class K07 {
 		
 		System.out.println("등록된 " + s.num + "명의 학생 목록은 다음과 같습니다");
 		System.out.println("------------------------------------");
-		System.out.println("번호 / 국어 / 영어 / 수학 / 총점 / 평균");
+		System.out.println("번호 / 국어 / 영어 / 수학 / 총점 / 평균 / 학점");
 		
 		for(int i = 0; i < s.num; i++)
 			s.print(i);

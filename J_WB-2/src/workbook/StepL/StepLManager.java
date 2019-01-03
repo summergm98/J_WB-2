@@ -8,7 +8,7 @@ public class StepLManager {
 		Scanner s = new Scanner(System.in);
 		while(true) {
 			printf("---------------------\n");
-			printf("1. 메뉴판 저장하기\n");
+			printf("1. 메뉴판 정하기\n");
 			printf("2. 주차장 입출력 관리\n");
 			printf("3. 식당 주문 관리\n");
 			printf("4. 학생 정보 관리\n");
